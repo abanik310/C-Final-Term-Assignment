@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbxNameForReg = new System.Windows.Forms.TextBox();
-            this.tbxUserNameForReg = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btn = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radioFemale = new System.Windows.Forms.RadioButton();
+            this.radioMale = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tbxEmailforReg = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.tbxCnfrmPassForReg = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbxPassForReg = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbxEmailforReg = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.radioMale = new System.Windows.Forms.RadioButton();
-            this.radioFemale = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btn = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.tbxUserNameForReg = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbxNameForReg = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,41 +77,97 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sign Up";
             // 
-            // label1
+            // label8
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name : ";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label8.Location = new System.Drawing.Point(29, 26);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(160, 19);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "\"It\'s quick and easy\"";
             // 
-            // tbxNameForReg
+            // btn
             // 
-            this.tbxNameForReg.Location = new System.Drawing.Point(158, 85);
-            this.tbxNameForReg.Multiline = true;
-            this.tbxNameForReg.Name = "tbxNameForReg";
-            this.tbxNameForReg.Size = new System.Drawing.Size(190, 22);
-            this.tbxNameForReg.TabIndex = 1;
+            this.btn.BackColor = System.Drawing.Color.Green;
+            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn.Location = new System.Drawing.Point(91, 404);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(196, 35);
+            this.btn.TabIndex = 15;
+            this.btn.Text = "Sign Up";
+            this.btn.UseVisualStyleBackColor = false;
             // 
-            // tbxUserNameForReg
+            // label7
             // 
-            this.tbxUserNameForReg.Location = new System.Drawing.Point(158, 121);
-            this.tbxUserNameForReg.Multiline = true;
-            this.tbxUserNameForReg.Name = "tbxUserNameForReg";
-            this.tbxUserNameForReg.Size = new System.Drawing.Size(190, 22);
-            this.tbxUserNameForReg.TabIndex = 3;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(40, 333);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 19);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Gender : ";
             // 
-            // label2
+            // radioFemale
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 121);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 19);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "User Name : ";
+            this.radioFemale.AutoSize = true;
+            this.radioFemale.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioFemale.Location = new System.Drawing.Point(269, 333);
+            this.radioFemale.Name = "radioFemale";
+            this.radioFemale.Size = new System.Drawing.Size(79, 23);
+            this.radioFemale.TabIndex = 13;
+            this.radioFemale.TabStop = true;
+            this.radioFemale.Text = "Female";
+            this.radioFemale.UseVisualStyleBackColor = true;
+            // 
+            // radioMale
+            // 
+            this.radioMale.AutoSize = true;
+            this.radioMale.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioMale.Location = new System.Drawing.Point(158, 333);
+            this.radioMale.Name = "radioMale";
+            this.radioMale.Size = new System.Drawing.Size(63, 23);
+            this.radioMale.TabIndex = 12;
+            this.radioMale.TabStop = true;
+            this.radioMale.Text = "Male";
+            this.radioMale.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(22, 288);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 19);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Date of Birth : ";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(158, 281);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(190, 26);
+            this.dateTimePicker1.TabIndex = 10;
+            // 
+            // tbxEmailforReg
+            // 
+            this.tbxEmailforReg.Location = new System.Drawing.Point(158, 241);
+            this.tbxEmailforReg.Multiline = true;
+            this.tbxEmailforReg.Name = "tbxEmailforReg";
+            this.tbxEmailforReg.Size = new System.Drawing.Size(190, 22);
+            this.tbxEmailforReg.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(40, 241);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 19);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Email : ";
             // 
             // tbxCnfrmPassForReg
             // 
@@ -149,97 +205,41 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Password : ";
             // 
-            // tbxEmailforReg
+            // tbxUserNameForReg
             // 
-            this.tbxEmailforReg.Location = new System.Drawing.Point(158, 241);
-            this.tbxEmailforReg.Multiline = true;
-            this.tbxEmailforReg.Name = "tbxEmailforReg";
-            this.tbxEmailforReg.Size = new System.Drawing.Size(190, 22);
-            this.tbxEmailforReg.TabIndex = 9;
+            this.tbxUserNameForReg.Location = new System.Drawing.Point(158, 121);
+            this.tbxUserNameForReg.Multiline = true;
+            this.tbxUserNameForReg.Name = "tbxUserNameForReg";
+            this.tbxUserNameForReg.Size = new System.Drawing.Size(190, 22);
+            this.tbxUserNameForReg.TabIndex = 3;
             // 
-            // label5
+            // label2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 241);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 19);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Email : ";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "User Name : ";
             // 
-            // dateTimePicker1
+            // tbxNameForReg
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(158, 281);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(190, 26);
-            this.dateTimePicker1.TabIndex = 10;
+            this.tbxNameForReg.Location = new System.Drawing.Point(158, 85);
+            this.tbxNameForReg.Multiline = true;
+            this.tbxNameForReg.Name = "tbxNameForReg";
+            this.tbxNameForReg.Size = new System.Drawing.Size(190, 22);
+            this.tbxNameForReg.TabIndex = 1;
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 288);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Date of Birth : ";
-            // 
-            // radioMale
-            // 
-            this.radioMale.AutoSize = true;
-            this.radioMale.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioMale.Location = new System.Drawing.Point(158, 333);
-            this.radioMale.Name = "radioMale";
-            this.radioMale.Size = new System.Drawing.Size(63, 23);
-            this.radioMale.TabIndex = 12;
-            this.radioMale.TabStop = true;
-            this.radioMale.Text = "Male";
-            this.radioMale.UseVisualStyleBackColor = true;
-            // 
-            // radioFemale
-            // 
-            this.radioFemale.AutoSize = true;
-            this.radioFemale.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioFemale.Location = new System.Drawing.Point(269, 333);
-            this.radioFemale.Name = "radioFemale";
-            this.radioFemale.Size = new System.Drawing.Size(79, 23);
-            this.radioFemale.TabIndex = 13;
-            this.radioFemale.TabStop = true;
-            this.radioFemale.Text = "Female";
-            this.radioFemale.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(40, 333);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 19);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Gender : ";
-            // 
-            // btn
-            // 
-            this.btn.BackColor = System.Drawing.Color.Green;
-            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn.Location = new System.Drawing.Point(91, 404);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(196, 35);
-            this.btn.TabIndex = 15;
-            this.btn.Text = "Sign Up";
-            this.btn.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label8.Location = new System.Drawing.Point(40, 26);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(160, 19);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "\"It\'s quick and easy\"";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(40, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name : ";
             // 
             // Registration
             // 
