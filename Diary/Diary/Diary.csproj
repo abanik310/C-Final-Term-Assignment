@@ -74,6 +74,12 @@
     <Compile Include="Presentation\EntryControl.Designer.cs">
       <DependentUpon>EntryControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\ViewEntryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\ViewEntryControl.Designer.cs">
+      <DependentUpon>ViewEntryControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation\DiaryForm.resx">
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\EntryControl.resx">
       <DependentUpon>EntryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ViewEntryControl.resx">
+      <DependentUpon>ViewEntryControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

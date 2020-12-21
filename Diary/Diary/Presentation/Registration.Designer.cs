@@ -30,12 +30,12 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.btn = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.radioFemale = new System.Windows.Forms.RadioButton();
             this.radioMale = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tbxDateForReg = new System.Windows.Forms.DateTimePicker();
             this.tbxEmailforReg = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbxCnfrmPassForReg = new System.Windows.Forms.TextBox();
@@ -53,12 +53,12 @@
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.btn);
+            this.groupBox1.Controls.Add(this.btnSignUp);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.radioFemale);
             this.groupBox1.Controls.Add(this.radioMale);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.tbxDateForReg);
             this.groupBox1.Controls.Add(this.tbxEmailforReg);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.tbxCnfrmPassForReg);
@@ -88,16 +88,17 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "\"It\'s quick and easy\"";
             // 
-            // btn
+            // btnSignUp
             // 
-            this.btn.BackColor = System.Drawing.Color.Green;
-            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn.Location = new System.Drawing.Point(91, 404);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(196, 35);
-            this.btn.TabIndex = 15;
-            this.btn.Text = "Sign Up";
-            this.btn.UseVisualStyleBackColor = false;
+            this.btnSignUp.BackColor = System.Drawing.Color.Green;
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignUp.Location = new System.Drawing.Point(91, 404);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(196, 35);
+            this.btnSignUp.TabIndex = 15;
+            this.btnSignUp.Text = "Sign Up";
+            this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btn_Click);
             // 
             // label7
             // 
@@ -143,16 +144,17 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Date of Birth : ";
             // 
-            // dateTimePicker1
+            // tbxDateForReg
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(158, 281);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(190, 26);
-            this.dateTimePicker1.TabIndex = 10;
+            this.tbxDateForReg.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxDateForReg.Location = new System.Drawing.Point(158, 281);
+            this.tbxDateForReg.Name = "tbxDateForReg";
+            this.tbxDateForReg.Size = new System.Drawing.Size(190, 26);
+            this.tbxDateForReg.TabIndex = 10;
             // 
             // tbxEmailforReg
             // 
+            this.tbxEmailforReg.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxEmailforReg.Location = new System.Drawing.Point(158, 241);
             this.tbxEmailforReg.Multiline = true;
             this.tbxEmailforReg.Name = "tbxEmailforReg";
@@ -171,6 +173,7 @@
             // 
             // tbxCnfrmPassForReg
             // 
+            this.tbxCnfrmPassForReg.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxCnfrmPassForReg.Location = new System.Drawing.Point(158, 200);
             this.tbxCnfrmPassForReg.Multiline = true;
             this.tbxCnfrmPassForReg.Name = "tbxCnfrmPassForReg";
@@ -189,6 +192,7 @@
             // 
             // tbxPassForReg
             // 
+            this.tbxPassForReg.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxPassForReg.Location = new System.Drawing.Point(158, 160);
             this.tbxPassForReg.Multiline = true;
             this.tbxPassForReg.Name = "tbxPassForReg";
@@ -207,6 +211,7 @@
             // 
             // tbxUserNameForReg
             // 
+            this.tbxUserNameForReg.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxUserNameForReg.Location = new System.Drawing.Point(158, 121);
             this.tbxUserNameForReg.Multiline = true;
             this.tbxUserNameForReg.Name = "tbxUserNameForReg";
@@ -225,6 +230,7 @@
             // 
             // tbxNameForReg
             // 
+            this.tbxNameForReg.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxNameForReg.Location = new System.Drawing.Point(158, 85);
             this.tbxNameForReg.Multiline = true;
             this.tbxNameForReg.Name = "tbxNameForReg";
@@ -251,6 +257,7 @@
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
+            this.Load += new System.EventHandler(this.Registration_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -263,7 +270,7 @@
         private System.Windows.Forms.RadioButton radioFemale;
         private System.Windows.Forms.RadioButton radioMale;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker tbxDateForReg;
         private System.Windows.Forms.TextBox tbxEmailforReg;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbxCnfrmPassForReg;
@@ -276,6 +283,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnSignUp;
     }
 }

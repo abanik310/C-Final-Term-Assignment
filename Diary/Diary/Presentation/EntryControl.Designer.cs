@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxEntryDateContrl = new System.Windows.Forms.DateTimePicker();
+            this.tbxTitleContrl = new System.Windows.Forms.TextBox();
             this.lblEntry = new System.Windows.Forms.Label();
             this.tbxEntry = new System.Windows.Forms.RichTextBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -47,20 +47,20 @@
             this.lblTitle.Text = "Title";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
-            // dateTimePicker1
+            // tbxEntryDateContrl
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(24, 75);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(201, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.tbxEntryDateContrl.Location = new System.Drawing.Point(24, 75);
+            this.tbxEntryDateContrl.Name = "tbxEntryDateContrl";
+            this.tbxEntryDateContrl.Size = new System.Drawing.Size(201, 20);
+            this.tbxEntryDateContrl.TabIndex = 1;
             // 
-            // textBox1
+            // tbxTitleContrl
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 17);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(433, 25);
-            this.textBox1.TabIndex = 2;
+            this.tbxTitleContrl.Location = new System.Drawing.Point(82, 17);
+            this.tbxTitleContrl.Multiline = true;
+            this.tbxTitleContrl.Name = "tbxTitleContrl";
+            this.tbxTitleContrl.Size = new System.Drawing.Size(433, 25);
+            this.tbxTitleContrl.TabIndex = 2;
             // 
             // lblEntry
             // 
@@ -77,19 +77,20 @@
             this.tbxEntry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbxEntry.Location = new System.Drawing.Point(24, 173);
             this.tbxEntry.Name = "tbxEntry";
-            this.tbxEntry.Size = new System.Drawing.Size(491, 220);
+            this.tbxEntry.Size = new System.Drawing.Size(491, 288);
             this.tbxEntry.TabIndex = 4;
             this.tbxEntry.Text = "";
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Turquoise;
-            this.btnSave.Location = new System.Drawing.Point(418, 415);
+            this.btnSave.Location = new System.Drawing.Point(418, 493);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(97, 40);
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // EntryControl
             // 
@@ -98,11 +99,11 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbxEntry);
             this.Controls.Add(this.lblEntry);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.tbxTitleContrl);
+            this.Controls.Add(this.tbxEntryDateContrl);
             this.Controls.Add(this.lblTitle);
             this.Name = "EntryControl";
-            this.Size = new System.Drawing.Size(542, 472);
+            this.Size = new System.Drawing.Size(582, 575);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,8 +112,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker tbxEntryDateContrl;
+        private System.Windows.Forms.TextBox tbxTitleContrl;
         private System.Windows.Forms.Label lblEntry;
         private System.Windows.Forms.RichTextBox tbxEntry;
         private System.Windows.Forms.Button btnSave;

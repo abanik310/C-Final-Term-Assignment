@@ -1,5 +1,6 @@
 ﻿using Diary.Data_Access;
 using Diary.Entity;
+using Diary.Presentation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Diary
 {
-    public partial class Login : Form
+    public partial class Login : Form,IDisposable
     {
         public Login()
         {
@@ -26,16 +27,49 @@ namespace Diary
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = tbxUserName.Text;
-            string password = tbxPassword.Text;
-
-            UserDataAccess userDataAccess = new UserDataAccess();
-
-            if (userDataAccess.LoginValidation(username, password))
+            if (tbxUserName.Text == "" || tbxPassword.Text == "")
             {
-                User user = userDataAccess.UserDataRetrive(username,password);
+                MessageBox.Show("Username or Password can not be empty", "Warning");
+            }
+            else
+            {
+                string username = tbxUserName.Text;
+                string password = tbxPassword.Text;
+                string id;
+
+                UserDataAccess userDataAccess = new UserDataAccess();
+
+                id = userDataAccess.getUserID(username, password);
+
+                if (userDataAccess.LoginValidation(username, password))
+                {
+
+                    DiaryForm diaryForm = new DiaryForm(id);
+                    diaryForm.Show();
+                    this.Hide();
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Invalid Username or Password");
+                }
 
             }
+
+            
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Registration registration = new Registration();
+            registration.Show();
+            this.Hide();
         }
     }
 }
